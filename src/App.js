@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import Joke from './components/Joke';
+import Joke from './components/Joke/random.js';
 import GlobalStyle from './styles/global';
 
 function App() {
