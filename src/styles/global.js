@@ -15,12 +15,6 @@ export default createGlobalStyle`
     }
 
 
-    button {
-
-    border: none;
-    background: transparent;
-    color: inherit;
-    cursor: pointer;
-}
+  
 
 `
