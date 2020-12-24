@@ -1,15 +1,30 @@
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import Header from './components/Header';
-import Joke from './components/Joke/random.js';
+import Random from './components/Joke/random.js';
+import Multiple from './components/Joke/multiple.js';
+
 import GlobalStyle from './styles/global';
 
 function App() {
   return (
-<>
-      <Header />
-      <Joke />
-      <GlobalStyle />
 
-      
+<>
+
+
+
+<BrowserRouter>
+  <Header />
+    <Switch>
+      <Route path="/random" component={Random} />
+      <Route path="/multiple" component={Multiple} />
+    </Switch>
+</BrowserRouter>
+
+
+    <GlobalStyle />
+
+
 </>
   );
 }

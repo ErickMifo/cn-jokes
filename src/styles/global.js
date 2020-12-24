@@ -13,8 +13,16 @@ export default createGlobalStyle`
         color: #333;
         -webkit-font-smoothing: antialiased !important;
     }
+ 
 
+    a  {
+    text-decoration: none;
+}
 
+    a:hover {
+     text-decoration:none; 
+     cursor:pointer;  
+}
   
 
 `

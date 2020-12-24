@@ -11,6 +11,7 @@ export const Container = styled.div`
     justify-content: center;
     
     h1 {
+        color: white;
         opacity: 0.8;
         cursor: pointer;
 

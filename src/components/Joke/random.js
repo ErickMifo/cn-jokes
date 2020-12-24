@@ -1,28 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import instance from '../../axios/axios';
 
-import { Container } from './styles';
-import { makeStyles } from '@material-ui/core/styles';
+import { Container, useStyles } from './styles';
+
+
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 
-const useStyles = makeStyles({
-    root: {
-      width: 550,
-      height: 150,
-      marginTop: 20,
-      marginBottom: 20,
-    },
-    text: {
-      fontSize: 12,
-    },
-  });
-  
 
-function Joke() {
+function Random() {
     const classes = useStyles();
 
 
@@ -32,7 +21,7 @@ function Joke() {
 
     useEffect(() => {
         async function getData() {
-            const request = await instance.get('/jokes/random')
+            const request = await instance.get('/jokes/random?escape=javascript')
               setJoke(request.data.value.joke)
         }
       
@@ -60,4 +49,4 @@ function Joke() {
   );
 }
 
-export default Joke;
+export default Random;
