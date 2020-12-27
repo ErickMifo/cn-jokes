@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 export const Container = styled.div`
 
     display: flex;
@@ -24,4 +25,17 @@ export const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       minWidth: 120,
     },
+    input: {
+      marginRight: 20,
+    },
+    form: {
+      marginTop: 20,
+      marginBottom: 50,
+      display: 'flex',
+      flexDirection: 'column'
+    },
+    button: {
+      marginTop: 20,
+      justifyContent: 'center',       
+    }
   }));
