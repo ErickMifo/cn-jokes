@@ -1,8 +1,9 @@
-import { Button, Card, CardContent, TextField, Typography } from '@material-ui/core';
 import React, {useState, useEffect} from 'react';
 import instance from '../../axios/axios';
 
 import { Container, useStyles } from './styles';
+
+import { Button, Card, CardContent, TextField, Typography } from '@material-ui/core';
 
 
 function ChangeName() {

@@ -4,10 +4,7 @@ import instance from '../../axios/axios';
 import { Container, useStyles } from './styles';
 
 
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import { FormControl, MenuItem, Select } from '@material-ui/core';
+import { FormControl, MenuItem, Select, Card, CardContent, Typography } from '@material-ui/core';
 
 
 function Multiple() {
