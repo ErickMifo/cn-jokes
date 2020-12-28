@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const useStyles = makeStyles((theme) => ({
     root: {
-      width: 550,
+      width: '80vw',
       height: 150,
       marginTop: 20,
       marginBottom: 20,
@@ -28,6 +28,11 @@ export const useStyles = makeStyles((theme) => ({
     },
     input: {
       marginRight: 20,
+      ['@media (max-width:480px)']: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItens: 'center',
+      }
     },
     form: {
       marginTop: 20,

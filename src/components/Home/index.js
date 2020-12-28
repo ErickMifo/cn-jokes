@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import instance from '../../axios/axios';
 
 
-import { Container, DataContainer, useStyles } from './styles';
+import { Container, DataContainer } from './styles';
 
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 
 
 function Home() {
-    const classes = useStyles()
 
     const [numofjokes,setNumofjokes] = useState(0)
     const [categories, setCategories] = useState([])
@@ -43,13 +42,13 @@ function Home() {
 
         <h2>Categories:</h2>
 
-    {categories.map((item) => {
+    {categories.map((item, index) => {
 
 
   
   return(
 
-    <h3> {item} </h3>
+    <h3 key = {index}> {item} </h3>
 
     )})}
 
@@ -63,19 +62,19 @@ function Home() {
 
             
         <Link to={'/random'}>
-            <Button className={classes.button} variant="outlined">
+            <Button  variant="outlined">
                 Random Joke
             </Button>
         </Link>
 
         <Link to={'/multiple'}>
-            <Button className={classes.button}  variant="outlined" color="primary">
+            <Button   variant="outlined" color="primary">
                 Multiple Random Jokes
             </Button>
         </Link>
 
         <Link to={'/changeName'}>
-            <Button className={classes.button} variant="outlined" color="secondary">
+            <Button  variant="outlined" color="secondary">
                 Joke with Name Changed
             </Button>
         </Link>

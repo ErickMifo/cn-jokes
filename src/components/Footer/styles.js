@@ -18,4 +18,8 @@ export const Container = styled.footer`
     position: absolute;
     left: 0;
     bottom: 0;
+
+    @media(max-width: 595px) {
+        display: none;
+    }
 `;
