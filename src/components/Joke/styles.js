@@ -9,6 +9,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 8vh;
+    flex: 1 0 auto;
 `
 
 export const useStyles = makeStyles((theme) => ({
@@ -30,7 +31,6 @@ export const useStyles = makeStyles((theme) => ({
     },
     form: {
       marginTop: 20,
-      marginBottom: 50,
       display: 'flex',
       flexDirection: 'column'
     },

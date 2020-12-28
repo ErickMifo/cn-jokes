@@ -6,17 +6,28 @@ export default createGlobalStyle`
         padding: 0;
         outline: none;
         box-sizing: border-box;
+
     }
+
+    html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
 
     body {
         background: #edebf5;
         color: #333;
         -webkit-font-smoothing: antialiased !important;
+        margin: 0 0 16vh;
+
     }
  
 
     a  {
     text-decoration: none;
+    color: #FFF;
 }
 
     a:hover {
