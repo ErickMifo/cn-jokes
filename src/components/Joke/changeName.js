@@ -44,12 +44,29 @@ function ChangeName() {
             
             <div>
 
-                <TextField className={classes.input} onChange={(e) => {setStorefirstName(e.target.value)}} id="standard-basic" label="First Name" />
-                <TextField onChange={(e) => {setStorelastName(e.target.value)}} id="standard-basic" label="Last Name" />
+                <TextField 
+                inputProps={{ "data-testid": "input-firstName" }}
+                className={classes.input}
+                onChange={(e) => {setStorefirstName(e.target.value)}} 
+                id="standard-basic" 
+                label="First Name" />
+
+                <TextField 
+                inputProps={{ "data-testid": "input-lastName"}}
+                onChange={(e) => {setStorelastName(e.target.value)}} 
+                id="standard-basic" 
+                label="Last Name" />
                 
             </div>
 
-                <Button type="submit" className={classes.button} variant="contained"> Confirm </Button>
+                <Button 
+                data-testid="btn"
+                type="submit" 
+                className={classes.button} 
+                variant="contained"> 
+                    Confirm 
+                </Button>
+
         </form>
 
 {firstName || lastName !== '' ?
@@ -57,7 +74,8 @@ function ChangeName() {
 <>
         <Card className={classes.root}>
         <CardContent>
-        <Typography className={classes.title}>
+        <Typography
+        className={classes.title}>
             {joke}
          </Typography>
         </CardContent>
