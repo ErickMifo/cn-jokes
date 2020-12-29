@@ -48,6 +48,9 @@ function Specific() {
 
     </form>
 
+    {id === '' ? null 
+    
+    :
         <Card className={classes.root}>
         <CardContent>
         <Typography className={classes.title}>
@@ -56,8 +59,7 @@ function Specific() {
         </CardContent>
         </Card>
 
-
-
+    }
 
     
         </Container>
