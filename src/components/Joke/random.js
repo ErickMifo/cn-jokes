@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import instance from '../../axios/axios';
 
-import { Container, useStyles } from './styles';
+import { Container } from './styles';
 
 
-import { Card, CardContent, Typography, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
+import JokeCard from '../card';
 
 
 
 function Random() {
-    const classes = useStyles();
+
 
 
     const[joke, setJoke] = useState('')
@@ -30,13 +31,8 @@ function Random() {
   return (
     <Container>
         <h2> Random Joke </h2>
-        <Card className={classes.root}>
-        <CardContent>
-        <Typography className={classes.title}>
-            {joke}
-         </Typography>
-        </CardContent>
-        </Card>
+    
+    <JokeCard content={joke} />
 
         <Button variant="contained" color="primary" onClick={() => {setCount(count+1)}}>
             Next Joke

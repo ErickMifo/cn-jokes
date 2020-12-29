@@ -3,7 +3,8 @@ import instance from '../../axios/axios';
 
 import { Container, useStyles } from './styles';
 
-import { Button, Card, CardContent, TextField, Typography } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
+import JokeCard from '../card';
 
 function Specific() {
   const classes = useStyles();
@@ -51,13 +52,9 @@ function Specific() {
     {id === '' ? null 
     
     :
-        <Card className={classes.root}>
-        <CardContent>
-        <Typography className={classes.title}>
-          {joke === undefined ? `No quote with id = ${id}` :  joke}
-         </Typography>
-        </CardContent>
-        </Card>
+
+         <JokeCard content={joke === undefined ? `No quote with id = ${id}` :  joke} />
+     
 
     }
 

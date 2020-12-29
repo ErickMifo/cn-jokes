@@ -3,7 +3,8 @@ import instance from '../../axios/axios';
 
 import { Container, useStyles } from './styles';
 
-import { Button, Card, CardContent, TextField, Typography } from '@material-ui/core';
+import { Button,  TextField } from '@material-ui/core';
+import JokeCard from '../card';
 
 
 function ChangeName() {
@@ -72,14 +73,7 @@ function ChangeName() {
 {firstName || lastName !== '' ?
 
 <>
-        <Card className={classes.root}>
-        <CardContent>
-        <Typography
-        className={classes.title}>
-            {joke}
-         </Typography>
-        </CardContent>
-        </Card>
+        <JokeCard content={joke}/>
 
         <Button variant="contained" color="primary" onClick={() => {setCount(count+1)}}>
             Next Joke

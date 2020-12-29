@@ -4,7 +4,8 @@ import instance from '../../axios/axios';
 import { Container, useStyles } from './styles';
 
 
-import { FormControl, MenuItem, Select, Card, CardContent, Typography } from '@material-ui/core';
+import { FormControl, MenuItem, Select } from '@material-ui/core';
+import JokeCard from '../card';
 
 
 function Multiple() {
@@ -54,13 +55,7 @@ function Multiple() {
 {joke !== [''] ? 
     joke.map((item, index) => {
         return(
-        <Card key ={index} className={classes.root}>
-        <CardContent >
-        <Typography  className={classes.title}>
-            {item.joke} 
-         </Typography>
-        </CardContent>
-        </Card>
+    <JokeCard content={item.joke} key = {index}/>
     )}) : null
 }
     
