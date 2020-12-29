@@ -10,6 +10,7 @@ export const Container = styled.div`
     align-items: center;
     margin-top: 8vh;
     flex: 1 0 auto;
+    
 `
 
 export const useStyles = makeStyles((theme) => ({
@@ -30,8 +31,6 @@ export const useStyles = makeStyles((theme) => ({
       marginRight: 20,
       '@media (max-width:480px)': {
         display: 'flex',
-        flexDirection: 'column',
-        alignItens: 'center',
       }
     },
     form: {
