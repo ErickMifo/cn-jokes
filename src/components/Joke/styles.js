@@ -28,7 +28,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     input: {
       marginRight: 20,
-      ['@media (max-width:480px)']: {
+      '@media (max-width:480px)': {
         display: 'flex',
         flexDirection: 'column',
         alignItens: 'center',
