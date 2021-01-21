@@ -9,7 +9,7 @@ function Footer() {
     <Container>
 
            <p>Código disponível:</p>
-             <a  rel="noopener noreferrer" target="_blank" href="https://github.com/ErickMifo/cn-jokes"> https://github.com/ErickMifo/truckpag-teste </a> 
+             <a  rel="noopener noreferrer" target="_blank" href="https://github.com/ErickMifo/cn-jokes"> https://github.com/ErickMifo/cn-jokes </a> 
 
     </Container>
   );
