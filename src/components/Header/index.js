@@ -8,7 +8,7 @@ function Header() {
   return (
     <Container>
       <Link to="">
-        <h1> Truckpag-Teste</h1>
+        <h1> CN jokes </h1>
       </Link>
     </Container>
   );

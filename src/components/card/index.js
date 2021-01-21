@@ -8,7 +8,9 @@ function JokeCard({ content })  {
 
     const classes = useStyles();
     return (
-        <Card className={classes.root}>
+        <Card 
+        data-testid="card"
+        className={classes.root}>
         <CardContent >
         <Typography  className={classes.title}>
             {content}
